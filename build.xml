@@ -1,4 +1,4 @@
-<project  default="compile" basedir=".">
+<project  default="run" basedir=".">
 
     <target name="clean" >
         <delete dir="build"/>
