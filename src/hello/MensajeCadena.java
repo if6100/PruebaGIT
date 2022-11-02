@@ -18,7 +18,7 @@ public abstract class MensajeCadena{
         if (siguiente == null) {
             return mensaje;
         }
-        return next.agregarMensaje(mensaje);
+        return siguiente.agregarMensaje(mensaje);
     }
   
 }
