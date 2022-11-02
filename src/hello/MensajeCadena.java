@@ -6,7 +6,7 @@ public abstract class MensajeCadena{
   public static MensajeCadena link(MensajeCadena first, MensajeCadena... chain) {
         MensajeCadena head = first;
         for (MensajeCadena nextInChain: chain) {
-            head.next = nextInChain;
+            head.siguiente = nextInChain;
             head = nextInChain;
         }
         return first;
