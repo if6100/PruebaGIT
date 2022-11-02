@@ -1,16 +1,16 @@
 <project  default="compile" basedir=".">
 
-    <target name="clean">
+    <target name="clean" >
         <delete dir="build"/>
     </target>
 
-    <target name="compile">
+    <target name="compile" depends="clean">
         <echo message="compilar"/>
         <mkdir dir="build/classes"/>
         <javac srcdir="src" destdir="build/classes"/>
     </target>
 
-    <target name="jar">
+    <target name="jar" depends="compile">
         <echo message="generar jar"/>
         <mkdir dir="build/jar"/>
         <jar destfile="build/jar/HelloWorld.jar" basedir="build/classes">
@@ -20,7 +20,7 @@
         </jar>
     </target>
 
-    <target name="run">
+    <target name="run" depends="jar">
         <echo message="correr"/>
         <java jar="build/jar/HelloWorld.jar" fork="true"/>
     </target>
