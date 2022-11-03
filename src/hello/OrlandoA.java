@@ -1,10 +1,9 @@
 package hello;
-
-public class ProfesorCadena extends MensajeCadena{
+public class OrlandoA extends MensajeCadena{
 
   public String agregarMensaje(String mensaje){
     mensaje+= "Profesor:hola";
-    System.out.println("mensaje issac");
+    System.out.println("Hola pura vida!");
     return siguienteCadena(mensaje);
   }
 }
