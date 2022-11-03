@@ -1,5 +1,5 @@
 package hello;
-public class extends MensajeCadena{
+public class JoseIsaac extends MensajeCadena{
 
   public String agregarMensaje(String mensaje){
     mensaje+= "Jose Isaac:hola";
